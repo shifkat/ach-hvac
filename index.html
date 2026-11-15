@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACH HVAC | Modern Heating, Cooling &amp; Air Quality Solutions</title>
+  <meta name="description" content="Trusted residential and commercial HVAC installation, repair, and preventative maintenance. 24/7 emergency dispatch and energy-efficient climate control." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span><i class="fa-solid fa-clock"></i> 24/7 Emergency HVAC Dispatch Available</span>
+        <span class="divider">|</span>
+        <span><i class="fa-solid fa-shield-halved"></i> Licensed, Bonded &amp; Insured Technicians</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="mailto:service@ach-hvac.com"><i class="fa-solid fa-envelope"></i> service@ach-hvac.com</a>
+        <a href="#quote" class="top-promo-link">Free In-Home Estimate &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand-logo" aria-label="ACH HVAC Home">
+        <img src="assets/logo.svg" alt="ACH HVAC Logo" height="44" />
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">Why ACH</a>
+        <a href="#maintenance">Maintenance Plans</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+18005550199" class="phone-pill">
+          <span class="phone-icon"><i class="fa-solid fa-phone-volume"></i></span>
+          <span class="phone-text">
+            <small>24/7 Emergency Line</small>
+            <strong>(800) 555-0199</strong>
+          </span>
+        </a>
+        <a href="#quote" class="btn btn-primary nav-cta">Book Service</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span> Same-Day Service &amp; Upfront Flat-Rate Pricing
+        </div>
+        <h1>Precision Climate Control for Modern Homes &amp; Businesses</h1>
+        <p class="hero-subtitle">
+          From high-efficiency AC installations and furnace repairs to commercial rooftop units and indoor air purification—ACH HVAC keeps your space comfortable year-round.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#quote" class="btn btn-accent btn-lg">
+            Schedule Free Estimate <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#services" class="btn btn-outline-light btn-lg">
+            Explore Services
+          </a>
+        </div>
+
+        <div class="hero-trust-strip">
+          <div class="trust-item">
+            <div class="trust-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span><strong>4.9/5 Rating</strong> from 650+ Local Reviews</span>
+          </div>
+          <div class="trust-badges">
+            <span><i class="fa-solid fa-certificate"></i> NATE Certified</span>
+            <span><i class="fa-solid fa-leaf"></i> Energy Star Partner</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Service Booking Card -->
+      <div class="hero-form-card" id="quote">
+        <div class="form-card-header">
+          <span class="form-tag">Fast Response</span>
+          <h3>Request Service or Quote</h3>
+          <p>Fill out the form below and an HVAC specialist will call you within 15 minutes.</p>
+        </div>
+        <form id="quickQuoteForm" class="quote-form">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Johnathan Miller" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 234-5678" required />
+            </div>
+            <div class="form-group">
+              <label for="zipCode">ZIP Code</label>
+              <input type="text" id="zipCode" name="zipCode" placeholder="75001" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="serviceType">Service Needed</label>
+            <select id="serviceType" name="serviceType" required>
+              <option value="" disabled selected>Select a service...</option>
+              <option value="ac-repair">AC Repair / Not Cooling</option>
+              <option value="ac-install">New AC or Heat Pump Installation</option>
+              <option value="heating">Furnace &amp; Heating Repair</option>
+              <option value="maintenance">Seasonal Tune-Up &amp; Maintenance</option>
+              <option value="air-quality">Indoor Air Quality &amp; Ductwork</option>
+              <option value="commercial">Commercial HVAC Service</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="urgency">Urgency Level</label>
+            <div class="urgency-options">
+              <label class="radio-pill">
+                <input type="radio" name="urgency" value="emergency" checked />
+                <span><i class="fa-solid fa-bolt"></i> Emergency Today</span>
+              </label>
+              <label class="radio-pill">
+                <input type="radio" name="urgency" value="flexible" />
+                <span><i class="fa-regular fa-calendar"></i> Flexible / Quote</span>
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Get My Free Quote <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p class="form-privacy"><i class="fa-solid fa-lock"></i> Zero spam. 100% satisfaction guarantee.</p>
+        </form>
+        <div id="formSuccess" class="form-success hidden">
+          <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h4>Request Received!</h4>
+          <p>Thank you! Our dispatch team has received your request and will contact you shortly.</p>
+          <button type="button" class="btn btn-outline-dark btn-sm" id="resetFormBtn">Submit Another Request</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Metrics Strip -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat-box">
+        <span class="stat-number" data-target="18">18+</span>
+        <span class="stat-label">Years of HVAC Excellence</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number" data-target="12500">12,500+</span>
+        <span class="stat-label">Systems Installed &amp; Serviced</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">60 Min</span>
+        <span class="stat-label">Average Emergency Response</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">10-Yr</span>
+        <span class="stat-label">Parts &amp; Labor Warranties</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services Section -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">What We Do</span>
+        <h2>Complete Heating, Cooling &amp; Air Quality Services</h2>
+        <p>Engineered solutions tailored to maximize comfort, lower monthly utility bills, and extend equipment lifespan.</p>
+      </div>
+
+      <!-- Service Category Filter Tabs -->
+      <div class="service-tabs">
+        <button class="tab-btn active" data-filter="all">All Solutions</button>
+        <button class="tab-btn" data-filter="cooling">Cooling &amp; AC</button>
+        <button class="tab-btn" data-filter="heating">Heating &amp; Heat Pumps</button>
+        <button class="tab-btn" data-filter="air">Air Quality &amp; Commercial</button>
+      </div>
+
+      <div class="services-grid">
+        <!-- Card 1 -->
+        <article class="service-card" data-category="cooling">
+          <div class="service-icon cooling-icon">
+            <i class="fa-solid fa-snowflake"></i>
+          </div>
+          <h3>AC Repair &amp; Diagnostics</h3>
+          <p>Rapid troubleshooting for refrigerant leaks, frozen coils, faulty compressors, and thermostat failures across all major brands.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Fully stocked service trucks</li>
+            <li><i class="fa-solid fa-check"></i> Upfront flat-rate repair quotes</li>
+          </ul>
+          <a href="#quote" class="service-link">Schedule AC Repair <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="service-card" data-category="cooling">
+          <div class="service-icon install-icon">
+            <i class="fa-solid fa-fan"></i>
+          </div>
+          <h3>High-Efficiency AC Installation</h3>
+          <p>Custom-sized central air conditioners and ductless mini-splits designed to cut summer cooling costs by up to 35%.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Manual J load calculations</li>
+            <li><i class="fa-solid fa-check"></i> 0% APR financing available</li>
+          </ul>
+          <a href="#quote" class="service-link">Get System Estimate <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="service-card" data-category="heating">
+          <div class="service-icon heating-icon">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+          </div>
+          <h3>Furnace &amp; Heating Solutions</h3>
+          <p>Safe, reliable gas and electric furnace repairs, heat exchanger inspections, and high-AFUE heating replacements.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Carbon monoxide safety testing</li>
+            <li><i class="fa-solid fa-check"></i> 24/7 winter no-heat priority</li>
+          </ul>
+          <a href="#quote" class="service-link">Book Heating Service <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="service-card" data-category="heating">
+          <div class="service-icon heatpump-icon">
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </div>
+          <h3>Heat Pump Systems</h3>
+          <p>All-in-one electric heating and cooling systems eligible for federal tax credits and local utility energy rebates.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Cold-climate inverter tech</li>
+            <li><i class="fa-solid fa-check"></i> Rebate paperwork assistance</li>
+          </ul>
+          <a href="#quote" class="service-link">Explore Heat Pumps <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="service-card" data-category="air">
+          <div class="service-icon air-icon">
+            <i class="fa-solid fa-wind"></i>
+          </div>
+          <h3>Indoor Air Quality &amp; Ducts</h3>
+          <p>Hospital-grade HEPA filtration, UV-C air purifiers, whole-home dehumidifiers, and precision ductwork sealing.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Eliminates 99.9% of allergens</li>
+            <li><i class="fa-solid fa-check"></i> Balanced room-to-room airflow</li>
+          </ul>
+          <a href="#quote" class="service-link">Improve Air Quality <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="service-card" data-category="air">
+          <div class="service-icon commercial-icon">
+            <i class="fa-solid fa-building"></i>
+          </div>
+          <h3>Commercial HVAC &amp; RTUs</h3>
+          <p>Dedicated rooftop unit maintenance, VRF zoning, server room cooling, and preventative contracts for offices and retail.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Priority SLA response times</li>
+            <li><i class="fa-solid fa-check"></i> Detailed compliance reporting</li>
+          </ul>
+          <a href="#quote" class="service-link">Request Commercial Bid <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose ACH HVAC Section -->
+  <section class="section why-section" id="about">
+    <div class="container why-grid">
+      <div class="why-visual">
+        <div class="visual-card main-visual">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=80" alt="Certified HVAC Technician Inspecting System" loading="lazy" />
+          <div class="floating-badge">
+            <div class="badge-icon"><i class="fa-solid fa-award"></i></div>
+            <div>
+              <strong>100% Fixed-Right Guarantee</strong>
+              <span>Or we return and make it right free</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-content">
+        <span class="section-kicker">Why Choose ACH HVAC</span>
+        <h2>Honest Diagnostics. Clean Workmanship. Lasting Comfort.</h2>
+        <p class="lead-text">
+          We built ACH HVAC around a simple promise: treat every home and commercial property as if it were our own—with transparent pricing and zero high-pressure sales tactics.
+        </p>
+
+        <div class="benefit-list">
+          <div class="benefit-item">
+            <div class="benefit-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+            <div>
+              <h4>Upfront, Transparent Pricing</h4>
+              <p>You approve the exact flat-rate price before a single wrench is turned. No hidden overtime fees or surprise surcharges.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon"><i class="fa-solid fa-user-shield"></i></div>
+            <div>
+              <h4>Background-Checked NATE Technicians</h4>
+              <p>Our uniformed specialists undergo continuous factory training and arrive on time with shoe covers and drop cloths.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <div>
+              <h4>Multi-Brand Mastery</h4>
+              <p>Authorized service and installation experts for Trane, Carrier, Lennox, Daikin, Mitsubishi Electric, and Rheem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comfort Club Maintenance Plans -->
+  <section class="section plans-section" id="maintenance">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">Preventative Care</span>
+        <h2>ACH Comfort Club Maintenance Plans</h2>
+        <p>Prevent up to 85% of unexpected breakdowns and keep your manufacturer warranty valid with scheduled biannual tune-ups.</p>
+      </div>
+
+      <div class="plans-grid">
+        <!-- Plan 1 -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <h3>Essential Care</h3>
+            <p>Ideal for single-system residential homes</p>
+            <div class="plan-price">
+              <span class="currency">$</span>19<span class="period">/mo</span>
+            </div>
+            <small>Billed annually ($228/yr)</small>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-circle-check"></i> 2 Precision Tune-Ups/Year (Spring &amp; Fall)</li>
+            <li><i class="fa-solid fa-circle-check"></i> 15% Discount on All Repairs</li>
+            <li><i class="fa-solid fa-circle-check"></i> Standard 1" Filter Replacement Included</li>
+            <li><i class="fa-solid fa-circle-check"></i> Priority Scheduling Over Non-Members</li>
+          </ul>
+          <a href="#quote" class="btn btn-outline-primary btn-block">Join Essential Plan</a>
+        </div>
+
+        <!-- Plan 2 (Featured) -->
+        <div class="plan-card featured">
+          <div class="popular-ribbon">Most Popular</div>
+          <div class="plan-header">
+            <h3>Total Comfort Plus</h3>
+            <p>Complete peace of mind &amp; zero diagnostic fees</p>
+            <div class="plan-price">
+              <span class="currency">$</span>29<span class="period">/mo</span>
+            </div>
+            <small>Billed annually ($348/yr)</small>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-circle-check"></i> 2 Precision Tune-Ups/Year + Coil Wash</li>
+            <li><i class="fa-solid fa-circle-check"></i> <strong>$0 Diagnostic &amp; Dispatch Fees (24/7)</strong></li>
+            <li><i class="fa-solid fa-circle-check"></i> 20% Discount on All Repairs &amp; IAQ</li>
+            <li><i class="fa-solid fa-circle-check"></i> Guaranteed Same-Day Emergency Service</li>
+            <li><i class="fa-solid fa-circle-check"></i> $100/yr Loyalty Credit Toward New System</li>
+          </ul>
+          <a href="#quote" class="btn btn-accent btn-block">Join Total Comfort Plus</a>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <h3>Commercial Pro</h3>
+            <p>Tailored preventative care for business facilities</p>
+            <div class="plan-price">
+              <span class="custom-price">Custom</span>
+            </div>
+            <small>Based on tonnage &amp; unit count</small>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-circle-check"></i> Quarterly Filter, Belt &amp; Coil Service</li>
+            <li><i class="fa-solid fa-circle-check"></i> Dedicated Account Manager &amp; Logs</li>
+            <li><i class="fa-solid fa-circle-check"></i> 2-Hour Emergency SLA Guarantee</li>
+            <li><i class="fa-solid fa-circle-check"></i> Preferred Commercial Labor Rates</li>
+          </ul>
+          <a href="#quote" class="btn btn-outline-primary btn-block">Request Site Walkthrough</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">Client Stories</span>
+        <h2>Trusted by Homeowners &amp; Facility Managers</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">"Our AC died during a 98-degree heatwave on a Saturday afternoon. ACH HVAC arrived within 50 minutes, diagnosed a bad capacitor and contactor, and had cold air blowing before dinner."</p>
+          <div class="reviewer">
+            <div class="avatar">MR</div>
+            <div>
+              <strong>Marcus Reynolds</strong>
+              <span>Homeowner &bull; Verified Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">"We replaced our 16-year-old furnace and AC with a high-efficiency heat pump through ACH. Their installation crew was spotless, handled all utility rebates, and cut our electric bill noticeably."</p>
+          <div class="reviewer">
+            <div class="avatar">SL</div>
+            <div>
+              <strong>Sarah Lindqvist</strong>
+              <span>Homeowner &bull; Verified Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">"ACH manages the rooftop HVAC units for all three of our retail locations. Their preventative maintenance reports are thorough and we haven't had a single mid-summer shutdown since switching."</p>
+          <div class="reviewer">
+            <div class="avatar">DK</div>
+            <div>
+              <strong>David Kowalski</strong>
+              <span>Operations Director &bull; Commercial Client</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Callout Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner-inner">
+      <div>
+        <h2>Need Immediate Heating or Cooling Assistance?</h2>
+        <p>Our live dispatchers and on-call technicians are standing by 24 hours a day, 365 days a year.</p>
+      </div>
+      <div class="cta-banner-actions">
+        <a href="tel:+18005550199" class="btn btn-accent btn-lg">
+          <i class="fa-solid fa-phone"></i> Call (800) 555-0199
+        </a>
+        <a href="#quote" class="btn btn-outline-light btn-lg">Book Online</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <span class="logo-mark"><i class="fa-solid fa-fan"></i></span>
+          <span>ACH <strong>HVAC</strong></span>
+        </div>
+        <p>Delivering dependable residential and commercial heating, cooling, and indoor air quality solutions backed by certified expertise and honest pricing.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Google Business"><i class="fa-brands fa-google"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>HVAC Services</h4>
+        <ul>
+          <li><a href="#services">Air Conditioning Repair</a></li>
+          <li><a href="#services">New AC &amp; Heat Pump Install</a></li>
+          <li><a href="#services">Furnace &amp; Heating Repair</a></li>
+          <li><a href="#services">Indoor Air Quality</a></li>
+          <li><a href="#services">Commercial Rooftop Units</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">Why Choose ACH</a></li>
+          <li><a href="#maintenance">Comfort Club Plans</a></li>
+          <li><a href="#reviews">Customer Reviews</a></li>
+          <li><a href="#quote">Financing &amp; Rebates</a></li>
+          <li><a href="#quote">Request Estimate</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact &amp; Hours</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+18005550199">(800) 555-0199</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:service@ach-hvac.com">service@ach-hvac.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> 450 Industrial Pkwy, Suite 200</li>
+          <li><i class="fa-solid fa-clock"></i> Mon–Sat: 7:00 AM – 8:00 PM<br><small>24/7 Emergency Service Available</small></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="currentYear"></span> ACH HVAC Services. All Rights Reserved. License #HVAC-948210</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
