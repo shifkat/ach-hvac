@@ -1,19 +1,7 @@
-# ACH HVAC - Modern Homepage Project
+# ACH Heating and Air Conditioning Inc. - Homepage (v2)
 
-A clean, responsive, modern HTML5/CSS3/JS homepage template inspired by ACH HVAC (`ach-hvac.com`).
-
-## Folder Structure
-```text
-ach-hvac-modern-homepage/
-├── index.html          # Main homepage markup
-├── css/
-│   └── style.css       # Modern responsive styling & CSS variables
-├── js/
-│   └── main.js         # Mobile navigation, service filter tabs & form state
-├── assets/
-│   └── logo.svg        # Scalable vector brand logo
-└── README.md           # Setup & customization guide
-```
-
-## How to Run
-Simply open `index.html` in any modern web browser, or serve locally via VS Code Live Server.
+Updated homepage matching the exact hero composition of `ach-hvac.com`:
+- Top white announcement ticker bar above the hero card
+- Rounded full-bleed hero image container with the ACH hexagon emblem logo and navigation overlaid directly on top of the image
+- White pill CTA buttons (`CONTACT US` and `GET STARTED NOW`) with blue circular arrow icons
+- Bottom-right vertical testimonial slider card with up/down arrows, vertical pagination dots, and auto-rotation
